@@ -1,13 +1,4 @@
 ﻿  TESTOrderedArray.cpp
 E:\ADT_CA\TESTOrderedArray\TESTOrderedArray.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(158,4): error C2561: 'OrderedArray<int>::getElement': function must return a value
-E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(155,4): message : see declaration of 'OrderedArray<int>::getElement'
-E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(155,4): message : while compiling class template member function 'T OrderedArray<T>::getElement(int)'
-          with
-          [
-              T=int
-          ]
-E:\ADT_CA\TESTOrderedArray\TESTOrderedArray.cpp(86,10): message : see the first reference to 'OrderedArray<int>::getElement' in 'TESTOrderedArray::TESTOrderedArrayClass::TestPush'
-E:\ADT_CA\TESTOrderedArray\TESTOrderedArray.cpp(16,32): message : see reference to class template instantiation 'OrderedArray<int>' being compiled
-E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(164,5): error C2561: 'OrderedArray<int>::getElement': function must return a value
-E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(155,4): message : see declaration of 'OrderedArray<int>::getElement'
+E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(178): warning C4715: 'OrderedArray<int>::getElement': not all control paths return a value
+  TESTOrderedArray.vcxproj -> E:\ADT_CA\ADS_2023_RPT_OI\x64\Debug\TESTOrderedArray.dll

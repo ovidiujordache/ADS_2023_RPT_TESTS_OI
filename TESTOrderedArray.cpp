@@ -81,12 +81,13 @@ namespace TESTOrderedArray
 
 		TEST_METHOD(TestPush) {
 			OrderedArray<int>* oA = new OrderedArray<int>();
-			oA->push(2);
+
+			oA->push(7);
 
 			int b = oA->getElement(0);
-			Assert::AreEqual(2,b);
+			Assert::AreEqual(7,b);
 			//should fail
-			Assert::AreEqual(1, b);
+			//Assert::AreEqual(1, b);
 
 		}
 		
