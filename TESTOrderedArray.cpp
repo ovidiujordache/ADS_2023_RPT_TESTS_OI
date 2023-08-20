@@ -111,6 +111,12 @@ namespace TESTOrderedArray
 			
 
 		}
+		TEST_METHOD(TestSearch) {
+			OrderedArray<int>* oA = new OrderedArray<int>();
+			oA->push(112);
+			oA->push(120);
+			Assert::AreEqual(0, oA->search(112));
+		}
 		
 
 

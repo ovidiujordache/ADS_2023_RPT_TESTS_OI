@@ -1,5 +1,6 @@
 ﻿  TESTOrderedArray.cpp
 E:\ADT_CA\TESTOrderedArray\TESTOrderedArray.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(180): warning C4715: 'OrderedArray<int>::getElement': not all control paths return a value
+E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(210): warning C4715: 'OrderedArray<int>::search': not all control paths return a value
      Creating library E:\ADT_CA\ADS_2023_RPT_OI\x64\Debug\TESTOrderedArray.lib and object E:\ADT_CA\ADS_2023_RPT_OI\x64\Debug\TESTOrderedArray.exp
   TESTOrderedArray.vcxproj -> E:\ADT_CA\ADS_2023_RPT_OI\x64\Debug\TESTOrderedArray.dll
