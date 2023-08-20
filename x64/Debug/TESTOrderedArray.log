@@ -1,6 +1,18 @@
 ﻿  TESTOrderedArray.cpp
-E:\ADT_CA\TESTOrderedArray\TESTOrderedArray.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(180): warning C4715: 'OrderedArray<int>::getElement': not all control paths return a value
-E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(210): warning C4715: 'OrderedArray<int>::search': not all control paths return a value
-     Creating library E:\ADT_CA\ADS_2023_RPT_OI\x64\Debug\TESTOrderedArray.lib and object E:\ADT_CA\ADS_2023_RPT_OI\x64\Debug\TESTOrderedArray.exp
-  TESTOrderedArray.vcxproj -> E:\ADT_CA\ADS_2023_RPT_OI\x64\Debug\TESTOrderedArray.dll
+E:\ADT_CA\TESTOrderedArray\TESTOrderedArray.cpp(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(163,5): error C2440: 'return': cannot convert from 'int' to 'Box'
+E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(163,5): message : 'Box::Box': no overloaded function could convert all the argument types
+E:\ADT_CA\ADS_2023_RPT_OI\Box.h(60,1): message : could be 'Box::Box(Box &&)'
+E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(163,5): message : 'Box::Box(Box &&)': cannot convert argument 1 from 'int' to 'Box &&'
+E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(163,12): message : Reason: cannot convert from 'int' to 'Box'
+E:\ADT_CA\ADS_2023_RPT_OI\Box.h(60,1): message : or       'Box::Box(const Box &)'
+E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(163,5): message : 'Box::Box(const Box &)': cannot convert argument 1 from 'int' to 'const Box &'
+E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(163,12): message : Reason: cannot convert from 'int' to 'const Box'
+E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(163,5): message : while trying to match the argument list '(int)'
+E:\ADT_CA\ADS_2023_RPT_OI\OrderedArray.h(157,4): message : while compiling class template member function 'T OrderedArray<T>::getElement(int)'
+          with
+          [
+              T=Box
+          ]
+E:\ADT_CA\TESTOrderedArray\TESTOrderedArray.cpp(134,19): message : see the first reference to 'OrderedArray<Box>::getElement' in 'TESTOrderedArray::TESTOrderedArrayClass::TestObjectType'
+E:\ADT_CA\TESTOrderedArray\TESTOrderedArray.cpp(122,31): message : see reference to class template instantiation 'OrderedArray<Box>' being compiled

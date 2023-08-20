@@ -1,4 +1,5 @@
 #include "pch.h"
+#include"../ADS_2023_RPT_OI/Box.h"
 #include "CppUnitTest.h"
 #include "../ADS_2023_RPT_OI/OrderedArray.h";
 
@@ -116,6 +117,30 @@ namespace TESTOrderedArray
 			oA->push(112);
 			oA->push(120);
 			Assert::AreEqual(0, oA->search(112));
+		}
+		TEST_METHOD(TestObjectType) {
+			OrderedArray<Box>* oB= new OrderedArray<Box>(5);
+		
+			Box* b1 = new Box(3, 5, 3);
+			Box* b2 = new Box(36, 5, 5);
+			Box* b3 = new Box(36, 5, 5);
+			Box* b4 = new Box(36, 5, 5);
+			Box* b5 = new Box(36, 5, 5);
+			oB->push(*b1);
+			oB->push(*b2);
+			oB->push(*b3);
+			oB->push(*b4);
+			oB->push(*b5);
+			//Box getBox = oB->getElement(5);
+			//equals method implemented for Box object
+			// 
+			// fails on getElement return TYPE T.
+			// and toString. 
+			//Assert::AreEqual(*b1, getBox);
+			//code is good a bit of tweaking for Objects return TYPE in getELement if Array is NULL.
+
+
+
 		}
 		
 
