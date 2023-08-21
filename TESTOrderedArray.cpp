@@ -96,7 +96,7 @@ namespace TESTOrderedArray
 			OrderedArray<int>* oA = new OrderedArray<int>();
 
 			oA->push(7);
-
+			oA->push(7);
 			int b = oA->getElement(0);
 			Assert::AreEqual(7, b);
 			//should fail
