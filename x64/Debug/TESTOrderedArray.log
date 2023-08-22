@@ -1,11 +1,27 @@
-﻿  pch.cpp
-  TESTOrderedArray.cpp
+﻿  TESTOrderedArray.cpp
 E:\ADS_2023_REPEAT_OI\TESTOrderedArray\TESTOrderedArray.cpp(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(109,4): error C2065: 'bytesizeData': undeclared identifier
-E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(83,7): message : while compiling class template member function 'void OrderedArray<Box>::push(const T &)'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(290,13): error C2440: 'return': cannot convert from 'int' to 'Box'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(290,13): message : 'Box::Box': no overloaded function could convert all the argument types
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\Box.h(75,1): message : could be 'Box::Box(Box &&)'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(290,13): message : 'Box::Box(Box &&)': cannot convert argument 1 from 'int' to 'Box &&'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(290,20): message : Reason: cannot convert from 'int' to 'Box'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\Box.h(75,1): message : or       'Box::Box(const Box &)'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(290,13): message : 'Box::Box(const Box &)': cannot convert argument 1 from 'int' to 'const Box &'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(290,20): message : Reason: cannot convert from 'int' to 'const Box'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(290,13): message : while trying to match the argument list '(int)'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(288,7): message : while compiling class template member function 'T OrderedArray<T>::getElement(int)'
           with
           [
               T=Box
           ]
-E:\ADS_2023_REPEAT_OI\TESTOrderedArray\TESTOrderedArray.cpp(129,12): message : see the first reference to 'OrderedArray<Box>::push' in 'TESTOrderedArray::TESTOrderedArrayClass::TestObjectType'
-E:\ADS_2023_REPEAT_OI\TESTOrderedArray\TESTOrderedArray.cpp(122,31): message : see reference to class template instantiation 'OrderedArray<Box>' being compiled
+E:\ADS_2023_REPEAT_OI\TESTOrderedArray\TESTOrderedArray.cpp(156,19): message : see the first reference to 'OrderedArray<Box>::getElement' in 'TESTOrderedArray::TESTOrderedArrayClass::TestObjectType'
+E:\ADS_2023_REPEAT_OI\TESTOrderedArray\TESTOrderedArray.cpp(144,31): message : see reference to class template instantiation 'OrderedArray<Box>' being compiled
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(316,9): error C2440: 'return': cannot convert from 'int' to 'Box'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(316,9): message : 'Box::Box': no overloaded function could convert all the argument types
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\Box.h(75,1): message : could be 'Box::Box(Box &&)'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(316,9): message : 'Box::Box(Box &&)': cannot convert argument 1 from 'int' to 'Box &&'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(316,16): message : Reason: cannot convert from 'int' to 'Box'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\Box.h(75,1): message : or       'Box::Box(const Box &)'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(316,9): message : 'Box::Box(const Box &)': cannot convert argument 1 from 'int' to 'const Box &'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(316,16): message : Reason: cannot convert from 'int' to 'const Box'
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(316,9): message : while trying to match the argument list '(int)'

@@ -25,7 +25,7 @@ namespace TESTOrderedArray
 
 		TEST_METHOD(TestSize)
 		{
-			OrderedArray<int>* oA = new OrderedArray<int>();
+			OrderedArray<int>* oA =new  OrderedArray<int>();
 			Assert::AreEqual(0, oA->length());
 			oA->push(2);
 			Assert::AreEqual(1, oA->length());
@@ -96,8 +96,22 @@ namespace TESTOrderedArray
 			OrderedArray<int>* oA = new OrderedArray<int>();
 
 			oA->push(7);
+			oA->push(723434);
 			oA->push(7);
+			oA->push(723434);
 			int b = oA->getElement(0);
+			Assert::AreEqual(7, b);
+			//should fail
+			//Assert::AreEqual(1, b);
+		}
+		TEST_METHOD(TestGetElementFAil) {
+			OrderedArray<int>* oA = new OrderedArray<int>();
+
+			oA->push(7);
+			oA->push(723434);
+			oA->push(7);
+			oA->push(723434);
+			int b = oA->getElement(4);
 			Assert::AreEqual(7, b);
 			//should fail
 			//Assert::AreEqual(1, b);
@@ -116,7 +130,15 @@ namespace TESTOrderedArray
 			OrderedArray<int>* oA = new OrderedArray<int>();
 			oA->push(112);
 			oA->push(120);
-			Assert::AreEqual(0, oA->search(112));
+			int  s=120;
+			Assert::AreEqual(s, oA->search(120));
+		}
+		TEST_METHOD(TestSearchFail) {
+			OrderedArray<int>* oA = new OrderedArray<int>();
+			oA->push(112);
+			oA->push(120);
+			int  s = 23;//not pushed.
+			Assert::AreEqual(s, oA->search(23));
 		}
 		TEST_METHOD(TestObjectType) {
 			OrderedArray<Box>* oB= new OrderedArray<Box>(5);
@@ -131,13 +153,27 @@ namespace TESTOrderedArray
 			oB->push(*b3);
 			oB->push(*b4);
 			oB->push(*b5);
-			//Box getBox = oB->getElement(5);
-			//equals method implemented for Box object
-			// 
-			// fails on getElement return TYPE T.
-			// and toString. 
-			//Assert::AreEqual(*b1, getBox);
+			Box getBox = oB->getElement(5);
+			//overidint to_string in Box
+			//overiding equality [==, <,<] in Box
+		     Assert::AreEqual(*b1, getBox);
 			//code is good a bit of tweaking for Objects return TYPE in getELement if Array is NULL.
+
+
+
+		}
+		TEST_METHOD(TestFloat) {
+			OrderedArray<float>* oF = new OrderedArray<float>(5);
+			float* b1 = new float (34.);
+			float* b2 = new float(34.);
+			float* b3 = new float(34.);
+			oF->push(*b1);
+			oF->push(*b2);
+			oF->push(*b3);
+			float t = oF->getElement(0);
+
+			Assert::AreEqual(t,*b1);
+
 
 
 
