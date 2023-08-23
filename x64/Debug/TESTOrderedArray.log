@@ -2,7 +2,9 @@
   TESTOrderedArray.cpp
 E:\ADS_2023_REPEAT_OI\TESTOrderedArray\TESTOrderedArray.cpp(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 E:\ADS_2023_REPEAT_OI\TESTOrderedArray\TESTOrderedArray.cpp(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(322): warning C4715: 'OrderedArray<int>::getElement': not all control paths return a value
-E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(322): warning C4715: 'OrderedArray<float>::getElement': not all control paths return a value
+E:\ADS_2023_REPEAT_OI\TESTOrderedArray\TESTOrderedArray.cpp(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(293): warning C4715: 'OrderedArray<int>::getElement': not all control paths return a value
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\OrderedArray.h(293): warning C4715: 'OrderedArray<float>::getElement': not all control paths return a value
+E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\MySetAlloc.h(91): warning C4715: 'MySetAlloc<int>::contains': not all control paths return a value
      Creating library E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\x64\Debug\TESTOrderedArray.lib and object E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\x64\Debug\TESTOrderedArray.exp
   TESTOrderedArray.vcxproj -> E:\ADS_2023_REPEAT_OI\ADS_2023_RPT_OI\x64\Debug\TESTOrderedArray.dll

@@ -3,6 +3,7 @@
 #include "CppUnitTest.h"
 #include "../ADS_2023_RPT_OI/OrderedArray.h";
 #include "../ADS_2023_RPT_OI/OrderedArrayAlloc.h";
+#include "../ADS_2023_RPT_OI/MySetAlloc.h";
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -257,14 +258,48 @@ namespace TESTOrderedArray
 		
 
 		}
-		TEST_METHOD(TestOrderedArrayAllocSortFailFail) {
+		TEST_METHOD(TestOrderedSetAllocSortPass) {
 
 		}
 
-		TEST_METHOD(TestOrderedArrayAllocRemovePass) {
-
+		TEST_METHOD(TestOrderedSetAllocRemovePass) {
+			MySetAlloc<int>* set1 = new MySetAlloc<int>();
+			int* a = new int(1);
+			int* b = new int(2);
+			set1->add(*a);
+			set1->add(*b);
+			set1->remove(2);
+			Assert::AreEqual(false, set1->contains(2));
 		}
-		TEST_METHOD(TestOrderedArrayAllocRemoveFail) {
+	
+		TEST_METHOD(TestOrderedSetAllocAddPass) {
+			MySetAlloc<int>* set1 = new MySetAlloc<int>();
+			int* a = new int(1);
+			int* b = new int(2);
+			set1->add(*a);
+			set1->add(*b);
+			
+			Assert::AreEqual(2, set1->getSize());
+		}
+		TEST_METHOD(TestOrderedSetAllocAddUniquePass) {
+			MySetAlloc<int>* set1 = new MySetAlloc<int>();
+			int* a = new int(1);
+			int* b = new int(2);
+			set1->add(*a);
+			set1->add(*b);
+			set1->add(*b);
+			Assert::AreEqual(false, set1->contains(3));
+		}
+		TEST_METHOD(TestOrderedSetAllocContainsPass) {
+			MySetAlloc<int>* set1 = new MySetAlloc<int>();
+			int* a = new int(1);
+			int* b = new int(2);
+			set1->add(*a);
+			set1->add(*b);
+			
+			Assert::AreEqual(true, set1->contains(1));
+		}
+		TEST_METHOD(TestOrderedSetAllocContainsFail) {
 
 		}
 
